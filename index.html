@@ -100,10 +100,10 @@
         data = finalData;
 
         var keys = shape;
-
+        var yAxisLimit = 10000;
         //data.sort(function(a, b) { return b.total - a.total; });
         x.domain(data.map(function(d) { return d.State; }));
-        y.domain([0, 70000]).nice();
+        y.domain([0, yAxisLimit]).nice();
         z.domain(keys);
 
         g.append("g")

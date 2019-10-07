@@ -46,7 +46,7 @@
     var finalData;
     var shape = [];
     var index = 0;
-    d3.csv("scrubAll.csv", function(d, i, columns) {
+    d3.csv("scrub.csv", function(d, i, columns) {
         if(d.shape != ''){
             var temp2 = d.shape.toLowerCase();
             var temp = d.country.toLowerCase();
